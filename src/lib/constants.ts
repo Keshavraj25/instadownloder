@@ -12,4 +12,8 @@ export const homeLinks = {
   howItWorks: "#" + homeSections.howItWorks,
   testimonials: "#" + homeSections.testimonials,
   frequentlyAsked: "#" + homeSections.frequentlyAsked,
+  home: "/",
+  terms: "/terms",
+  privacy: "/privacy",
+  contact: "/contact",
 } as const;

@@ -3,9 +3,13 @@
     "themeLabel": "Тема",
     "localeLabel": "Язык",
     "links": {
+      "home": "Главная",
       "features": "Функции",
       "howItWorks": "Как это работает",
-      "frequentlyAsked": "FAQ"
+      "frequentlyAsked": "FAQ",
+      "terms": "Условия использования",
+      "privacy": "Политика конфиденциальности",
+      "contact": "Контакт"
     }
   },
   "footer": {

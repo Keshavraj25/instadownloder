@@ -3,9 +3,13 @@
     "themeLabel": "Theme",
     "localeLabel": "Language",
     "links": {
+      "home": "Home",
       "features": "Features",
       "howItWorks": "How It Works",
-      "frequentlyAsked": "FAQ"
+      "frequentlyAsked": "FAQ",
+      "terms": "Terms of Service",
+      "privacy": "Privacy Policy",
+      "contact": "Contact Us"
     }
   },
   "footer": {
