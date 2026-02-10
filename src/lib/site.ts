@@ -2,14 +2,14 @@ import { Metadata } from "next";
 
 export const siteConfig = {
   name: "InstaDownloader",
-  domain: "instadownloader.vercel.app",
+  domain: "instadownloaders.vercel.app",
   shortName: "InstaDownloader",
   creator: "riad-azz",
   description:
     "The ultimate professional Instagram video downloader. Save Reels, Videos, and Stories in high definition (1080p) instantly. No login required, fast, and 100% free.",
   ogDescription:
     "Download Instagram Videos & Reels in HD with InstaDownloader. Fast, free, and secure downloader for all your Instagram content saving needs.",
-  url: "https://instadownloader.vercel.app",
+  url: "https://instadownloaders.vercel.app",
   googleAnalyticsId: "G-8B40ZXMSXK",
 };
 
