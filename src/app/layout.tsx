@@ -9,8 +9,11 @@ import { ReactQueryProvider } from "@/features/react-query/react-query-provider"
 import { cn } from "@/lib/utils";
 import { siteMetadata } from "@/lib/site";
 import { getLocale, getMessages } from "next-intl/server";
+import Script from "next/script";
 
 import "./globals.css";
+
+import { siteConfig } from "@/lib/site";
 
 const geistSans = RootFont({
   variable: "--font-root-sans",
@@ -29,6 +32,21 @@ export default async function RootLayout({
 
   return (
     <html lang={locale} className="scroll-smooth" suppressHydrationWarning>
+      <head>
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=${siteConfig.googleAnalyticsId}`}
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', '${siteConfig.googleAnalyticsId}');
+          `}
+        </Script>
+      </head>
       <body className={cn("antialiased", geistSans.className)}>
         <LocaleProvider locale={locale} messages={messages}>
           <ThemeProvider>
