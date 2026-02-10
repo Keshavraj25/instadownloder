@@ -9,11 +9,11 @@
     }
   },
   "footer": {
-    "copyright": "© {year} Application. All rights reserved.",
+    "copyright": "© {year} GramGrabberz Pro. All rights reserved.",
     "links": {
       "terms": "Terms of Service",
       "privacy": "Privacy Policy",
-      "contact": "Contact"
+      "contact": "Contact Us"
     }
   }
 }

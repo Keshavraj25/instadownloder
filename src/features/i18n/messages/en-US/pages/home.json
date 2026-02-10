@@ -1,9 +1,9 @@
 {
-  "title": "Gram Grabberz",
-  "description": "Fast, free, and no login required. Just paste the URL and download.",
+  "title": "GramGrabberz Pro - Best Instagram Video & Reel Downloader",
+  "description": "Download Instagram videos, reels, and stories in HD (1080p) for free. GramGrabberz Pro is the fastest and most secure tool to save Instagram content without login.",
   "hero": {
-    "title": "Download Instagram Videos in Seconds",
-    "description": "Fast, free, and no login required. Just paste the URL and download.",
+    "title": "Pro Instagram Video Downloader",
+    "description": "The ultimate tool to save Instagram Reels, Videos, and Stories in high definition. Fast, free, and secure.",
     "form": {
       "placeholder": "Paste Instagram video URL here...",
       "button": "Download"
@@ -118,10 +118,16 @@
       "p3": "Select your desired quality from the available options. We offer HD downloads in various resolutions to suit your device storage needs."
     },
     "features": {
-      "title": "Premium Features for Everyone",
-      "p1": "High-Quality MP4: We support standard and high-definition formats including 1080p and 720p.",
-      "p2": "Privacy First: No personal data is collected. Your downloads are private and secure.",
-      "p3": "Universal Compatibility: Works perfectly on iPhone, Android, Windows, and macOS."
+      "title": "Professional Quality Downloads",
+      "p1": "High-Quality MP4: We support standard and high-definition formats including 1080p, 2K, and 4K when available.",
+      "p2": "Privacy First: Your downloads are processed securely. We don't track your history or save your data.",
+      "p3": "Universal Compatibility: Works perfectly on iPhone, Android, Windows, and macOS with no extra software."
+    },
+    "guide": {
+      "title": "Ultimate Guide to Saving Instagram Content",
+      "p1": "GramGrabberz Pro is designed to be the most reliable Instagram downloader available. Whether you are a social media manager, content creator, or just looking to save memories, our platform provides the speed and quality you need.",
+      "p2": "To get started, simply find the post on Instagram, copy the shareable link, and paste it above. Our system will analyze the URL and provide you with multiple download options in varying resolutions.",
+      "p3": "Our tool is optimized for all types of Instagram content, including Reels, IGTV, and feed videos. Experience the professional difference today."
     }
   },
   "result": {

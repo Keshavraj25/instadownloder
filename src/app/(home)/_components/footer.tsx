@@ -1,5 +1,4 @@
-import React from "react";
-
+import Link from "next/link";
 import { useTranslations } from "next-intl";
 
 export function Footer() {
@@ -8,30 +7,33 @@ export function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="w-full border-t bg-gray-100 py-6 md:py-0 dark:bg-gray-900">
-      <div className="container mx-auto flex flex-col items-center justify-between gap-4 px-4 md:h-16 md:flex-row md:px-6">
-        <p className="text-muted-foreground text-sm">
-          {t("copyright", { year })}
-        </p>
-        <div className="flex gap-4">
-          <a
-            href="#"
-            className="text-muted-foreground text-sm hover:text-teal-500"
+    <footer className="w-full border-t bg-secondary/5 py-12">
+      <div className="container mx-auto flex flex-col items-center justify-between gap-8 px-4 md:flex-row md:px-6">
+        <div className="flex flex-col items-center md:items-start gap-2">
+          <p className="text-xl font-bold neon-text">GramGrabberz Pro</p>
+          <p className="text-muted-foreground text-sm">
+            {t("copyright", { year })}
+          </p>
+        </div>
+        <div className="flex gap-8">
+          <Link
+            href="/terms"
+            className="text-muted-foreground text-sm hover:text-primary transition-colors font-medium"
           >
             {t("links.terms")}
-          </a>
-          <a
-            href="#"
-            className="text-muted-foreground text-sm hover:text-teal-500"
+          </Link>
+          <Link
+            href="/privacy"
+            className="text-muted-foreground text-sm hover:text-primary transition-colors font-medium"
           >
             {t("links.privacy")}
-          </a>
-          <a
-            href="#"
-            className="text-muted-foreground text-sm hover:text-teal-500"
+          </Link>
+          <Link
+            href="/contact"
+            className="text-muted-foreground text-sm hover:text-primary transition-colors font-medium"
           >
             {t("links.contact")}
-          </a>
+          </Link>
         </div>
       </div>
     </footer>

@@ -1,0 +1,19 @@
+{
+    "title": "Contact Us",
+    "description": "Have questions or need assistance? Our team is here to help you get the most out of GramGrabberz Pro.",
+    "info": {
+        "title": "Get in Touch",
+        "emailLabel": "Email Support",
+        "responseLabel": "Response Time",
+        "responseTime": "Within 24-48 hours"
+    },
+    "form": {
+        "nameLabel": "Full Name",
+        "namePlaceholder": "John Doe",
+        "emailLabel": "Email Address",
+        "emailPlaceholder": "john@example.com",
+        "messageLabel": "Your Message",
+        "messagePlaceholder": "How can we help you today?",
+        "submitButton": "Send Message"
+    }
+}

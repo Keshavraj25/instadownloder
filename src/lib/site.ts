@@ -1,19 +1,22 @@
 import { Metadata } from "next";
 
 export const siteConfig = {
-  name: "GramGrabberz",
+  name: "GramGrabberz Pro",
   domain: "gram-grabberz.vercel.com",
   shortName: "GramGrabberz",
   creator: "riad-azz",
   description:
-    "Fast, free, and no login required. Just paste the URL and download.",
+    "The ultimate professional Instagram video downloader. Save Reels, Videos, and Stories in high definition (1080p) instantly. No login required, fast, and 100% free.",
   ogDescription:
-    "Fast, free, and no login required. Just paste the URL and download.",
+    "Download Instagram Videos & Reels in HD with GramGrabberz Pro. Fast, free, and secure downloader for all your Instagram content saving needs.",
   url: "https://gram-grabberz.vercel.com",
 };
 
 export const siteMetadata: Metadata = {
-  title: siteConfig.name,
+  title: {
+    default: siteConfig.name,
+    template: `%s | ${siteConfig.name}`,
+  },
   description: siteConfig.description,
   creator: siteConfig.creator,
   openGraph: {
@@ -31,13 +34,13 @@ export const siteMetadata: Metadata = {
     creator: siteConfig.creator,
   },
   robots: {
-    index: false,
+    index: true,
     follow: true,
     nocache: true,
     googleBot: {
       index: true,
-      follow: false,
-      noimageindex: true,
+      follow: true,
+      noimageindex: false,
       "max-video-preview": -1,
       "max-image-preview": "large",
       "max-snippet": -1,
