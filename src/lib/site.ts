@@ -1,15 +1,15 @@
 import { Metadata } from "next";
 
 export const siteConfig = {
-  name: "GramGrabberz Pro",
-  domain: "gram-grabberz.vercel.com",
-  shortName: "GramGrabberz",
+  name: "InstaDownloader",
+  domain: "instadownloader.vercel.app",
+  shortName: "InstaDownloader",
   creator: "riad-azz",
   description:
     "The ultimate professional Instagram video downloader. Save Reels, Videos, and Stories in high definition (1080p) instantly. No login required, fast, and 100% free.",
   ogDescription:
-    "Download Instagram Videos & Reels in HD with GramGrabberz Pro. Fast, free, and secure downloader for all your Instagram content saving needs.",
-  url: "https://gram-grabberz.vercel.com",
+    "Download Instagram Videos & Reels in HD with InstaDownloader. Fast, free, and secure downloader for all your Instagram content saving needs.",
+  url: "https://instadownloader.vercel.app",
 };
 
 export const siteMetadata: Metadata = {
