@@ -5,6 +5,7 @@ import React from "react";
 import { toast } from "sonner";
 import { useForm } from "react-hook-form";
 import { useTranslations } from "next-intl";
+import Image from "next/image";
 
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -27,8 +28,6 @@ import { useGetInstagramPostMutation } from "@/features/react-query/mutations/in
 import { HTTP_CODE_ENUM } from "@/features/api/http-codes";
 
 // 5 minutes
-const CACHE_TIME = 5 * 60 * 1000;
-
 const FormValidations = {
   url: {
     REGEX: /^(https?:\/\/)?(www\.)?instagram\.com\/(p|reel)\/.+$/,
@@ -83,10 +82,12 @@ function ResultCard({ data, t }: { data: any; t: any }) {
       <div className="glass-card rounded-[2.5rem] overflow-hidden flex flex-col md:flex-row gap-8 p-8 border-primary/20 shadow-[0_0_50px_rgba(255,100,200,0.1)]">
         {/* Preview Container */}
         <div className="relative w-full md:w-[350px] aspect-[9/16] rounded-2xl overflow-hidden group">
-          <img
+          <Image
             src={media.thumbnail_src}
             alt="Video Preview"
-            className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+            fill
+            className="object-cover transition-transform duration-700 group-hover:scale-110"
+            unoptimized
           />
           <div className="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
             <div className="w-16 h-16 rounded-full bg-primary/80 flex items-center justify-center backdrop-blur-md">
@@ -164,7 +165,6 @@ function ResultCard({ data, t }: { data: any; t: any }) {
 
 export function InstagramForm(props: { className?: string }) {
   const inputRef = React.useRef<HTMLInputElement>(null);
-  const cachedUrls = React.useRef(new Map<string, CachedUrl>());
   const [resultData, setResultData] = React.useState<any>(null);
 
   const tHome = useTranslations("pages.home");
@@ -312,11 +312,3 @@ export function InstagramForm(props: { className?: string }) {
     </div>
   );
 }
-
-type CachedUrl = {
-  videoUrl?: string;
-  expiresAt: number;
-  invalid?: {
-    messageKey: string;
-  };
-};
