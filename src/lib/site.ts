@@ -50,5 +50,8 @@ export const siteMetadata: Metadata = {
     icon: "/favicon.svg",
     apple: "/favicon.svg",
   },
+  verification: {
+    google: "3pzphnk4tF8_SO4tk5qjVf_A7_axA3tM0pFpSQf5PWM",
+  },
   manifest: "/webmanifest.json",
 };
