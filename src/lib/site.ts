@@ -11,6 +11,7 @@ export const siteConfig = {
     "Download Instagram Videos & Reels in HD with InstaDownloader. Fast, free, and secure downloader for all your Instagram content saving needs.",
   url: "https://instadownloaders.vercel.app",
   googleAnalyticsId: "G-8B40ZXMSXK",
+  googleAdSenseId: "ca-pub-8615789090438802",
 };
 
 export const siteMetadata: Metadata = {

@@ -46,6 +46,12 @@ export default async function RootLayout({
             gtag('config', '${siteConfig.googleAnalyticsId}');
           `}
         </Script>
+        <Script
+          async
+          src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${siteConfig.googleAdSenseId}`}
+          crossOrigin="anonymous"
+          strategy="afterInteractive"
+        />
       </head>
       <body className={cn("antialiased", geistSans.className)}>
         <LocaleProvider locale={locale} messages={messages}>
