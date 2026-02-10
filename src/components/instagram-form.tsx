@@ -211,7 +211,7 @@ export function InstagramForm(props: { className?: string }) {
     try {
       const { data, status } = await getInstagramPost({ shortcode });
 
-      if (status === HTTP_CODE_ENUM.OK) {
+      if (status === HTTP_CODE_ENUM.OK && data) {
         if (data.data.xdt_shortcode_media.video_url) {
           setResultData(data);
           toast.success(tForm("toasts.success"), {
@@ -223,7 +223,8 @@ export function InstagramForm(props: { className?: string }) {
           throw new Error("Video URL not found");
         }
       } else {
-        const errorMessageKey = `serverErrors.${data.error}`;
+        const errorKey = (data && "error" in data) ? data.error : "error";
+        const errorMessageKey = `serverErrors.${errorKey}`;
         form.setError("url", { message: tForm(errorMessageKey) });
       }
     } catch (error) {
